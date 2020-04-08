@@ -1,12 +1,14 @@
 input {
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 400px;
     margin-top: 50px;
 }
+
 
 .btn.btn-primary {
     background-color: navy;
     width: 100px;
+    margin-bottom: 75px;
 }
 
 .button-div {
@@ -14,6 +16,8 @@ input {
     justify-content: center;
     margin-top: 15px;
 }
+
+
 
 
 

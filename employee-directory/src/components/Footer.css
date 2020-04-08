@@ -1,0 +1,9 @@
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+
+}
+
