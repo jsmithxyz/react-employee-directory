@@ -1,0 +1,19 @@
+input {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.btn.btn-primary {
+    background-color: navy;
+    width: 100px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+
