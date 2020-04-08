@@ -1,0 +1,13 @@
+.lead {
+    text-align: center;
+    color: white;
+}
+
+.display-4 {
+    text-align: center;
+    color: white;
+}
+
+.jumbotron.jumbotron-fluid {
+    background-color: navy;
+}
