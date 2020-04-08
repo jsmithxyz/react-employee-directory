@@ -10,12 +10,10 @@ class Search extends Component {
         <input
           type="text"
           className="form-control"
+          placeholder= "Search by Name"
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-default"
         />
-      </div>
-      <div className="button-div">
-        <button className="btn btn-primary" type="submit"><i className="fas fa-search"></i></button>
       </div>
         </Fragment>
     );

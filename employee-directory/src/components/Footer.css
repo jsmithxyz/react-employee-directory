@@ -4,6 +4,8 @@
     width: 100%;
     display: block;
     text-align: center;
-
+    background-color: navy;
+    border-top: 1em solid rgb(143, 11, 11);
+    color: white;
 }
 

@@ -8,7 +8,7 @@ class Header extends Component {
         <div className="container">
           <h1 className="display-4">Employee Directory</h1>
           <p className="lead">
-            Please search employees below.
+            Click on carrot by Name to sort or use Search below to narrow your results
           </p>
         </div>
       </div>
