@@ -1,8 +1,12 @@
 import React, { Component, Fragment } from "react";
-
 import "./Search.css"
 
 class Search extends Component {
+
+handleInputChange = event => {
+        this.setState({ users: event.target.value });
+      };
+
   render() {
     return (
         <Fragment>
@@ -13,6 +17,7 @@ class Search extends Component {
           placeholder= "Search by Name"
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-default"
+          onChange={this.handleInputChange}
         />
       </div>
         </Fragment>

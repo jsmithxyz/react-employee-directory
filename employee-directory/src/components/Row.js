@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Moment from "react-moment";
 
-function Row(props) {
+const Row = (props) => {
   return (
     <Fragment>
       {props.users.map((user) => (

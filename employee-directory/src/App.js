@@ -9,7 +9,9 @@ class App extends React.Component {
     return (
       <Fragment>
         <Header />
-        <Search />
+        <Search 
+          handleInputChange = {this.handleInputChange}
+        />
         <Table />
         <Footer />
 
