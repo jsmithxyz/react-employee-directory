@@ -1,13 +1,30 @@
 import React, { Component } from 'react';
+import API from "../utils/Api";
 import "./Table.css";
+import Row from "./Row";
 
 class Table extends Component {
+  state = {
+    users: []
+  }
+
+  componentDidMount() {
+    this.employees();
+  }
+
+  employees = () => {
+    API.getUsers()
+      .then(res => 
+        this.setState({ users: res.data.results }))
+      .catch(err => console.log(err));
+  };
+
     render() {
         return (
             <table className="table table-hover">
   <thead>
     <tr>
-      <th scope="col">Image </th>
+      <th scope="col">Image</th>
       <th scope="col">Name <i className="fa fa-caret-down"></i></th>
       <th scope="col">Phone</th>
       <th scope="col">Email</th>
@@ -15,13 +32,7 @@ class Table extends Component {
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Image</td>
-      <td>Jordan</td>
-      <td>Smith</td>
-      <td>jordan.smith@gmail.com</td>
-      <td>11-10-1989</td>
-    </tr>
+    <Row users={this.state.users} />
     <tr>
       <td>Image</td>
       <td>Patricia</td>

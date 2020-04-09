@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import Header from "./Header";
-import Search from "./Search";
-import Table from "./Table";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import Search from "./components/Search";
+import Table from "./components/Table";
+import Footer from "./components/Footer";
 
 class App extends React.Component {
   render() {
