@@ -33,20 +33,6 @@ class Table extends Component {
   </thead>
   <tbody>
     <Row users={this.state.users} />
-    <tr>
-      <td>Image</td>
-      <td>Patricia</td>
-      <td>Johnson</td>
-      <td>patricia.johnson@gmail.com</td>
-      <td>11-10-1989</td>
-    </tr>
-    <tr>
-      <td>Image</td>
-      <td>Marky</td>
-      <td>Mark</td>
-      <td>Marky.Mark@gmail.com</td>
-      <td>11-10-1989</td>
-    </tr>
   </tbody>
 </table>
         )

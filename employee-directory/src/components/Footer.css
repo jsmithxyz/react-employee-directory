@@ -1,5 +1,6 @@
-.footer-container {
-    position: absolute;
+
+.footer {
+    min-height: 50px;
     bottom: 0;
     width: 100%;
     display: block;
@@ -7,5 +8,16 @@
     background-color: navy;
     border-top: 1em solid rgb(143, 11, 11);
     color: white;
-}
+    position: relative;
+    margin-top:20px;
+  }
+  
+  .footer span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 3px;
+    background: navy;
+  }
 
