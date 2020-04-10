@@ -1,14 +1,18 @@
 .lead {
     text-align: center;
     color: white;
+    
 }
 
 .display-4 {
     text-align: center;
     color: white;
+
 }
 
 .jumbotron.jumbotron-fluid {
     background-color: navy;
     border-bottom: 1em solid rgb(143, 11, 11);
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: xx-large;
 }

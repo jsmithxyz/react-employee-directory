@@ -4,6 +4,7 @@ import "./Table.css";
 import Row from "./Row";
 import Search from "./Search";
 
+
 class Table extends Component {
   state = {
     users: [],
