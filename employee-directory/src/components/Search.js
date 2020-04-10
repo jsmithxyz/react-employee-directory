@@ -10,7 +10,7 @@ const Search = ({value, onChange}) => {
         <input
           type="text"
           className="form-control"
-          placeholder= "Search by Last Name"
+          placeholder= "Search by Last Name (Case Sensitive)"
           aria-label="Sizing example input"
           aria-describedby="inputGroup-sizing-default"
           value = {value}
