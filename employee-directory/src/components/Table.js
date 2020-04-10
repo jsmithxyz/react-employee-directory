@@ -26,14 +26,15 @@ class Table extends Component {
   }
 
   handleToggle = () => {
-    if (this.state.sortType === 'desc' || this.state.sortType !== 'asc') {
-      this.setState({sortType: 'asc'})
+    if (this.state.sortType === "desc" || this.state.sortType !== "asc") {
+      this.setState({ sortType: "asc" });
+    } else if (
+      this.state.sortType === "asc" ||
+      this.state.sortType !== "desc"
+    ) {
+      this.setState({ sortType: "desc" });
     }
-    else if (this.state.sortType === 'asc' || this.state.sortType !== 'desc') {
-      this.setState({sortType: 'desc'})
-    }
-  }
-  
+  };
 
   render() {
     let filteredEmployees = this.state.users.filter((user) => {
@@ -44,7 +45,7 @@ class Table extends Component {
       // Use toUpperCase() to ignore character casing
       const nameA = a.name.last.toUpperCase();
       const nameB = b.name.last.toUpperCase();
-  
+
       let comparison = 0;
       if (nameA > nameB) {
         comparison = 1;
@@ -52,13 +53,13 @@ class Table extends Component {
         comparison = -1;
       }
       return comparison * 1;
-    }
+    };
 
     const descending = (a, b) => {
       // Use toUpperCase() to ignore character casing
       const nameA = a.name.last.toUpperCase();
       const nameB = b.name.last.toUpperCase();
-  
+
       let comparison = 0;
       if (nameA > nameB) {
         comparison = 1;
@@ -66,15 +67,18 @@ class Table extends Component {
         comparison = -1;
       }
       return comparison * -1;
+    };
+
+    if (this.state.sortType === "asc") {
+      filteredEmployees.sort(ascending);
+    } else if (this.state.sortType === "desc") {
+      filteredEmployees.sort(descending);
     }
 
-    if (this.state.sortType === 'asc') {
-      filteredEmployees.sort(ascending)
-    }
-    else if(this.state.sortType === 'desc') {
-      filteredEmployees.sort(descending)
-    }
-    
+    //function to style point onMouseOver for Name sorting
+    const pointer = () => {
+      document.getElementById("clickable").style.cursor = "pointer";
+    };
 
     return (
       <Fragment>
@@ -86,8 +90,13 @@ class Table extends Component {
           <thead>
             <tr>
               <th scope="col">Image</th>
-              <th scope="col">
-                Name <button onClick = {this.handleToggle}><i className="fa fa-caret-down"></i></button>
+              <th
+                scope="col"
+                id="clickable"
+                onClick={this.handleToggle}
+                onMouseOver={pointer}
+              >
+                Name
               </th>
               <th scope="col">Phone</th>
               <th scope="col">Email</th>
