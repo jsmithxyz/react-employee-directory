@@ -1,26 +1,29 @@
 import React, { Fragment } from "react";
 import Moment from "react-moment";
 
-const Row = (props) => {
+const Row = ({ filteredEmployees }) => {
   return (
     <Fragment>
-      {props.users.map((user) => (
-        <tr>
+      {filteredEmployees.map((employee) => (
+        <tr key={filteredEmployees.indexOf(employee)}>
           <td>
-            <img src={user.picture.thumbnail} alt={user.name.first}></img>
+            <img
+              src={employee.picture.thumbnail}
+              alt={employee.name.first}
+            ></img>
           </td>
           <td>
-            {user.name.first} {user.name.last}
+            {employee.name.first} {employee.name.last}
           </td>
-          <td>{user.cell}</td>
-          <td>{user.email}</td>
+          <td>{employee.cell}</td>
+          <td>{employee.email}</td>
           <td>
-            <Moment format="MM-DD-YYYY">{user.dob.date}</Moment>
+            <Moment format="MM-DD-YYYY">{employee.dob.date}</Moment>
           </td>
         </tr>
       ))}
     </Fragment>
   );
-}
+};
 
 export default Row;

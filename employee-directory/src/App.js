@@ -9,10 +9,12 @@ class App extends React.Component {
     return (
       <Fragment>
         <Header />
-        <Search 
-          handleInputChange = {this.handleInputChange}
-        />
-        <Table />
+       
+        <Table >
+          <Search />
+        </Table>
+
+        
         <Footer />
 
       </Fragment>
