@@ -11,9 +11,9 @@ This application is an employee directory built using React.js, providing the ab
   - Search the table by employee's last name by using the input field.
   - Sort results alphabetically (ascending & descending) by last name by clicking on the 'Name' header.
 
-## Demonstration
+## Image of Application
 
-![homepage](./demoEmpDir.mp4 "homepage")
+![homepage](../employee-directory/demoEmpDir.png "homepage")
 
 ## Technologies used
 
