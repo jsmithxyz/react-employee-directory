@@ -13,7 +13,7 @@ This application is an employee directory built using React.js, providing the ab
 
 ## Image of Application
 
-![homepage](../employee-directory/demoEmpDir.png "homepage")
+![homepage](./demoEmpDir.png "homepage")
 
 ## Technologies used
 
