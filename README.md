@@ -1,4 +1,4 @@
-# react-employee-directory# React Employee Directory
+# React Employee Directory
 
 ## Overview
 
