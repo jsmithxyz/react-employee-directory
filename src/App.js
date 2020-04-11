@@ -9,14 +9,12 @@ class App extends React.Component {
     return (
       <Fragment>
         <Header />
-       
-        <Table >
+
+        <Table>
           <Search />
         </Table>
 
-        
         <Footer />
-
       </Fragment>
     );
   }
